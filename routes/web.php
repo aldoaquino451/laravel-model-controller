@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'index'] )->name('home');
+
+Route::get('/catalogo', [PageController::class, 'catalogue'] )->name('catalogue');
+
+Route::get('/scheda-film/{id}', [PageController::class, 'details'] )->name('details');

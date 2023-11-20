@@ -1,0 +1,41 @@
+.movie-card {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card-hover {
+        visibility: hidden;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        h5 {
+            // display: none;
+            top: 80%;
+            left: 10px;
+            color: white;
+            font-size: 40px;
+            padding: 10px;
+        }
+
+        a {
+            font-size: .8rem;
+        }
+
+    }
+
+
+    &:hover .card-hover {
+        visibility: visible;
+    }
+}

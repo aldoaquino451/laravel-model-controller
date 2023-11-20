@@ -9,9 +9,16 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function index() {
+        return view('home');
+    }
 
+    public function catalogue() {
         $movies = Movie::all();
+        return view('catalogue', compact('movies') );
+    }
 
-        return view('home', compact('movies') );
+    public function details($id) {
+        $movie = Movie::find($id);
+        return view('details', compact('movie'));
     }
 }

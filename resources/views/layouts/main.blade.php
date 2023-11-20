@@ -13,11 +13,11 @@
     <title>Laravel Model Controller</title>
 </head>
 
-<body style="min-height: 100vh">
+<body style="min-height: 100vh" class="position-relative">
 
     @include('partials.header')
 
-    <main>
+    <main style="padding-bottom: 40px">
         @yield('content')
     </main>
 
